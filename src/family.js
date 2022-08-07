@@ -57,7 +57,6 @@ const checkForCousins = (settings, familyTree, firstFamilyMemberId, secondFamily
   const commonAncestorGenerationNumber = FamilyTree.getGenerationNumber(familyTree, commonAncestorId, familyBranch);
   let degree = 0;
 
-  // check for cousins
   if (2 <= (firstFamilyMemberGenerationNumber - commonAncestorGenerationNumber)) {
     if (firstFamilyMemberGenerationNumber <= secondFamilyMemberGenerationNumber) {
       degree = (firstFamilyMemberGenerationNumber - commonAncestorGenerationNumber) - 1;
