@@ -1,0 +1,26 @@
+{
+  "name": "banyan",
+  "version": "1.0.0",
+  "description": "Find the consanguine relationship between two family members in a complex family tree.",
+  "type": "module",
+  "main": "./src/family.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ioanastumb/banyan.git"
+  },
+  "keywords": [
+    "family tree"
+  ],
+  "author": "ioanastumb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ioanastumb/banyan/issues"
+  },
+  "homepage": "https://github.com/ioanastumb/banyan#readme"
+}

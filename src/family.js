@@ -1,4 +1,4 @@
-const FamilyTree = require('./family-tree');
+import * as FamilyTree from './family-tree.js';
 
 const processFamilyTree = (familyData) => {
   let family = new Array();
@@ -168,7 +168,4 @@ const getKinshipByNames = (settings, familyData, firstFamilyMemberFullName, seco
   }
 }
 
-module.exports = {
-  getKinshipByNames: getKinshipByNames,
-  getKinshipByIds: getKinshipByIds
-};
+export { getKinshipByNames, getKinshipByIds }

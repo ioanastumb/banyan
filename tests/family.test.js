@@ -1,14 +1,19 @@
-const MockProvider = require('./mock-provider');
-const Family = require('./../src/family');
-const Helpers = require('./../src/helpers');
+import * as MockProvider from './mock-provider.js';
+import * as Family from './../src/family.js';
+import * as Helpers from './../src/helpers.js';
 
 
-const testSuccessfulKinshipByNames = (kinshipUnderTest, firstFamilyMemberFullName, secondFamilyMemberFullName, mockKinships) => {
+const testSuccessfulKinshipByNames = (kinshipUnderTest, firstFamilyMemberFullName, secondFamilyMemberFullName, mockKinships, logging = false) => {
   let result = Family.getKinshipByNames(
     MockProvider.getSettingsMock(),
     MockProvider.getFamilyData(),
     firstFamilyMemberFullName,
     secondFamilyMemberFullName);
+
+  if (logging) {
+    console.log('Result: ' + JSON.stringify(result));
+    console.log('Mock data: ' + JSON.stringify(mockKinships));
+  }
 
   if (result && result.success && Helpers.arraysEqual(result.kinships, mockKinships)) {
     console.log('Tests passed - ' + kinshipUnderTest);

@@ -10,7 +10,4 @@ const arraysEqual = (a1, a2) =>
 const arraysIntersect = (array1, array2) =>
   array1.filter(value => array2.includes(value));
 
-module.exports = {
-  arraysEqual: arraysEqual,
-  arraysIntersect: arraysIntersect
-};
+export { arraysEqual, arraysIntersect }

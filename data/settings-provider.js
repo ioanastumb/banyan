@@ -26,6 +26,4 @@ const getSettings = () => (
   }
 );
 
-module.exports = {
-  getSettings: getSettings
-};
+export { getSettings }

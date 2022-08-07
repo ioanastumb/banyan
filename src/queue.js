@@ -1,4 +1,4 @@
-class Queue {
+export class Queue {
   constructor() {
     this.elements = {};
     this.head = 0;
@@ -29,5 +29,3 @@ class Queue {
     return this.length === 0;
   }
 }
-
-module.exports = Queue
