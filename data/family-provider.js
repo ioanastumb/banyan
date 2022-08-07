@@ -76,7 +76,7 @@ const getHarryPotterUniverseFamilyData = () => (
           3
         ],
         gender: 'male',
-        fullName: 'Pollux Black (1912 - 1990)',
+        fullName: 'Pollux Black',
         familyBranches: [
           'Black'
         ]
@@ -95,7 +95,7 @@ const getHarryPotterUniverseFamilyData = () => (
           3
         ],
         gender: 'female',
-        fullName: 'Dorea Black (1920 - 1977)',
+        fullName: 'Dorea Black',
         familyBranches: [
           'Black'
         ]
@@ -345,7 +345,7 @@ const getHarryPotterUniverseFamilyData = () => (
         id: 33,
         parents: [-1],
         gender: 'female',
-        fullName: 'Lily Evans (1960 - 1981)',
+        fullName: 'Lily Evans',
         familyBranches: []
       },
       {
@@ -700,6 +700,4 @@ const getHarryPotterUniverseFamilyData = () => (
   }
 );
 
-module.exports = {
-  getFamilyData: getHarryPotterUniverseFamilyData
-};
+export { getHarryPotterUniverseFamilyData as getFamilyData }

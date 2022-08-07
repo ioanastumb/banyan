@@ -1,6 +1,5 @@
-const SettingsProvider = require('./../data/settings-provider');
-const FamilyDataProvider = require('./../data/family-provider');
-
+import * as SettingsProvider from './../data/settings-provider.js';
+import * as FamilyDataProvider from './../data/family-provider.js';
 
 const buildSuccessfulResult = (kinships) => ({
   success: true,
@@ -120,7 +119,7 @@ const getAuntOrUncleMock = () =>
       {
         firstFamilyMemberFullName: 'Cygnus Black III',
         secondFamilyMemberFullname: 'Sirius Black',
-        commonAncestorFullName: 'Pollux Black (1912 - 1990)',
+        commonAncestorFullName: 'Pollux Black',
         familyBranch: 'Black',
         kinship: 'aunt/uncle'
       }
@@ -156,7 +155,7 @@ const getFirstCousinsMock = () =>
       {
         firstFamilyMemberFullName: 'Bellatrix Lestrange (nee Black)',
         secondFamilyMemberFullname: 'Sirius Black',
-        commonAncestorFullName: 'Pollux Black (1912 - 1990)',
+        commonAncestorFullName: 'Pollux Black',
         familyBranch: 'Black',
         kinship: 'first cousin'
       }
@@ -176,22 +175,25 @@ const getFirstCousinsOnceRemovedMock = () =>
 
 const getErrorResultMock = () => buildErrorResult();
 
+const getSettingsMock = () => SettingsProvider.getSettings();
 
-module.exports = {
-  getSettingsMock: SettingsProvider.getSettings,
-  getFamilyData: FamilyDataProvider.getFamilyData,
-  getNoKinshipMock: getNoKinshipMock,
-  getSelfMock: getSelfMock,
-  getSiblingsOneBranch: getSiblingsOneBranch,
-  getSiblingsMultipleBranchesMock: getSiblingsMultipleBranchesMock,
-  getParentMock: getParentMock,
-  getChildMock: getChildMock,
-  getGrandparentMultipleBranchesMock: getGrandparentMultipleBranchesMock,
-  getGreatGreatGreatGreatGrandparentMock: getGreatGreatGreatGreatGrandparentMock,
-  getAuntOrUncleMock: getAuntOrUncleMock,
-  getGreatGreatGrandAuntOrUncleMock: getGreatGreatGrandAuntOrUncleMock,
-  getGreatGreatGrandNieceOrNephewMock: getGreatGreatGrandNieceOrNephewMock,
-  getFirstCousinsMock: getFirstCousinsMock,
-  getFirstCousinsOnceRemovedMock: getFirstCousinsOnceRemovedMock,
-  getErrorResultMock: getErrorResultMock
-};
+const getFamilyData = () => FamilyDataProvider.getFamilyData();
+
+export {
+  getSettingsMock,
+  getFamilyData,
+  getNoKinshipMock,
+  getSelfMock,
+  getSiblingsOneBranch,
+  getSiblingsMultipleBranchesMock,
+  getParentMock,
+  getChildMock,
+  getGrandparentMultipleBranchesMock,
+  getGreatGreatGreatGreatGrandparentMock,
+  getAuntOrUncleMock,
+  getGreatGreatGrandAuntOrUncleMock,
+  getGreatGreatGrandNieceOrNephewMock,
+  getFirstCousinsMock,
+  getFirstCousinsOnceRemovedMock,
+  getErrorResultMock
+}

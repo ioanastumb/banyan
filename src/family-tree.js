@@ -1,9 +1,9 @@
-const Queue = require('./queue');
-const Helpers = require('./helpers');
+import * as Queue from './queue.js';
+import * as Helpers from './helpers.js';
 
 const getAllAncerstorIds = (familyTree, familyMemberId) => {
   const ancestors = new Set();
-  let toVisit = new Queue();
+  let toVisit = new Queue.Queue();
 
   toVisit.enqueue(familyMemberId);
   ancestors.add(familyMemberId);
@@ -121,14 +121,14 @@ const getFamilyMemberIdFromFullName = (familyTree, familyMemberFullName) => {
     : undefined;
 }
 
-module.exports = {
-  getAllAncerstorIds: getAllAncerstorIds,
-  getGenerationDifference: getGenerationDifference,
-  getGenerationPrefix: getGenerationPrefix,
-  getAncestorIdOnSameGeneration: getAncestorIdOnSameGeneration,
-  getGenerationNumber: getGenerationNumber,
-  getLeastCommonAncestorIds: getLeastCommonAncestorIds,
-  getParentByFamilyBranch: getParentByFamilyBranch,
-  getParentIdByFamilyBranch: getParentIdByFamilyBranch,
-  getFamilyMemberIdFromFullName: getFamilyMemberIdFromFullName
-};
+export {
+  getAllAncerstorIds,
+  getGenerationDifference,
+  getGenerationPrefix,
+  getAncestorIdOnSameGeneration,
+  getGenerationNumber,
+  getLeastCommonAncestorIds,
+  getParentByFamilyBranch,
+  getParentIdByFamilyBranch,
+  getFamilyMemberIdFromFullName
+}

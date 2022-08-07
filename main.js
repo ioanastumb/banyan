@@ -1,7 +1,6 @@
-const SettingsProvider = require('./data/settings-provider');
-const FamilyDataProvider = require('./data/family-provider');
-const Family = require('./src/family');
-
+import * as SettingsProvider from './data/settings-provider.js';
+import * as FamilyDataProvider from './data/family-provider.js';
+import * as Family from './src/family.js';
 
 const prettyPrint = (kinships) => {
   let print = '';
