@@ -29,7 +29,7 @@ In order to use this, you need to:
   * take care in setting up the proper parent-child relationships
   * take care in setting up the proper family branches - children should have both parents' family branches in order to be properly related to them
   * samples from the wonderful Harry Potter universe can be found in this repository (linked above)
-* call the `[Family.getKinshipByNames()](https://github.com/ioanastumb/banyan/blob/main/src/family.js#L140)` method with the desired family member names
+* call the [Family.getKinshipByNames()](https://github.com/ioanastumb/banyan/blob/main/src/family.js#L140) method with the desired family member names
   * samples can be found in the [main.js](https://github.com/ioanastumb/banyan/blob/main/main.js) & [family.test.js](https://github.com/ioanastumb/banyan/blob/main/tests/family.test.js) files
 
 A more in-depth guide will be provided soon!
