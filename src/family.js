@@ -114,7 +114,7 @@ const getKinshipByIds = (settings, familyData, firstFamilyMemberId, secondFamily
       familyTree[ancestorId].familyBranches.forEach(familyBranch => {
         kinships.push({
           firstFamilyMemberFullName: familyTree[firstFamilyMemberId].fullName,
-          secondFamilyMemberFullname: familyTree[secondFamilyMemberId].fullName,
+          secondFamilyMemberFullName: familyTree[secondFamilyMemberId].fullName,
           commonAncestorFullName: familyTree[ancestorId].fullName,
           familyBranch: familyBranch,
           kinship: getKinshipFilteredByFamilyBranch(settings, familyTree, firstFamilyMemberId, secondFamilyMemberId, ancestorId, familyBranch)

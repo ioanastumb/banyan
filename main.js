@@ -10,7 +10,7 @@ const prettyPrint = (kinships) => {
       + ' is the '
       + k.kinship
       + ' of '
-      + k.secondFamilyMemberFullname
+      + k.secondFamilyMemberFullName
       + ' in the '
       + k.familyBranch
       + ' family branch; their common ancestor is '

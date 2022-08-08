@@ -586,7 +586,7 @@ const getHarryPotterUniverseFamilyData = () => (
           40
         ],
         gender: 'female',
-        fullName: 'Domonique Weasley',
+        fullName: 'Dominique Weasley',
         familyBranches: [
           'Weasley', 'Black'
         ]
