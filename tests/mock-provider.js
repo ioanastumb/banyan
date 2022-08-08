@@ -20,7 +20,7 @@ const getSelfMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Harry Potter',
-        secondFamilyMemberFullname: 'Harry Potter',
+        secondFamilyMemberFullName: 'Harry Potter',
         commonAncestorFullName: 'Harry Potter',
         familyBranch: 'Potter',
         kinship: 'self'
@@ -32,7 +32,7 @@ const getSiblingsOneBranch = () =>
     [
       {
         firstFamilyMemberFullName: 'Narcissa Malfoy (nee Black)',
-        secondFamilyMemberFullname: 'Bellatrix Lestrange (nee Black)',
+        secondFamilyMemberFullName: 'Bellatrix Lestrange (nee Black)',
         commonAncestorFullName: 'Cygnus Black III',
         familyBranch: 'Black',
         kinship: 'sibling'
@@ -44,14 +44,14 @@ const getSiblingsMultipleBranchesMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Fred Weasley',
-        secondFamilyMemberFullname: 'George Weasley',
+        secondFamilyMemberFullName: 'George Weasley',
         commonAncestorFullName: 'Arthur Weasley',
         familyBranch: 'Weasley',
         kinship: 'sibling'
       },
       {
         firstFamilyMemberFullName: 'Fred Weasley',
-        secondFamilyMemberFullname: 'George Weasley',
+        secondFamilyMemberFullName: 'George Weasley',
         commonAncestorFullName: 'Arthur Weasley',
         familyBranch: 'Black',
         kinship: 'sibling'
@@ -63,7 +63,7 @@ const getParentMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Walburga Black',
-        secondFamilyMemberFullname: 'Sirius Black',
+        secondFamilyMemberFullName: 'Sirius Black',
         commonAncestorFullName: 'Walburga Black',
         familyBranch: 'Black',
         kinship: 'parent'
@@ -75,7 +75,7 @@ const getChildMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Harry Potter',
-        secondFamilyMemberFullname: 'James Potter',
+        secondFamilyMemberFullName: 'James Potter',
         commonAncestorFullName: 'James Potter',
         familyBranch: 'Potter',
         kinship: 'child'
@@ -87,14 +87,14 @@ const getGrandparentMultipleBranchesMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Arthur Weasley',
-        secondFamilyMemberFullname: 'Hugo Granger-Weasley',
+        secondFamilyMemberFullName: 'Hugo Granger-Weasley',
         commonAncestorFullName: 'Arthur Weasley',
         familyBranch: 'Weasley',
         kinship: 'grandparent'
       },
       {
         firstFamilyMemberFullName: 'Arthur Weasley',
-        secondFamilyMemberFullname: 'Hugo Granger-Weasley',
+        secondFamilyMemberFullName: 'Hugo Granger-Weasley',
         commonAncestorFullName: 'Arthur Weasley',
         familyBranch: 'Black',
         kinship: 'grandparent'
@@ -106,7 +106,7 @@ const getGreatGreatGreatGreatGrandparentMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Phineas Nigellus Black',
-        secondFamilyMemberFullname: 'Edward Remus Lupin',
+        secondFamilyMemberFullName: 'Edward Remus Lupin',
         commonAncestorFullName: 'Phineas Nigellus Black',
         familyBranch: 'Black',
         kinship: SettingsProvider.getSettings().useExpandedGrandValues ? 'great great great great grandparent' : '4x great grandparent'
@@ -118,7 +118,7 @@ const getAuntOrUncleMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Cygnus Black III',
-        secondFamilyMemberFullname: 'Sirius Black',
+        secondFamilyMemberFullName: 'Sirius Black',
         commonAncestorFullName: 'Pollux Black',
         familyBranch: 'Black',
         kinship: 'aunt/uncle'
@@ -130,7 +130,7 @@ const getGreatGreatGrandAuntOrUncleMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Cygnus Black II',
-        secondFamilyMemberFullname: 'Hugo Granger-Weasley',
+        secondFamilyMemberFullName: 'Hugo Granger-Weasley',
         commonAncestorFullName: 'Phineas Nigellus Black',
         familyBranch: 'Black',
         kinship: SettingsProvider.getSettings().useExpandedGrandValues ? 'great great grandaunt/uncle' : '2x great grandaunt/uncle'
@@ -142,7 +142,7 @@ const getGreatGreatGrandNieceOrNephewMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Hugo Granger-Weasley',
-        secondFamilyMemberFullname: 'Cygnus Black II',
+        secondFamilyMemberFullName: 'Cygnus Black II',
         commonAncestorFullName: 'Phineas Nigellus Black',
         familyBranch: 'Black',
         kinship: SettingsProvider.getSettings().useExpandedGrandValues ? 'great great grandniece/nephew' : '2x great grandniece/nephew'
@@ -154,7 +154,7 @@ const getFirstCousinsMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Bellatrix Lestrange (nee Black)',
-        secondFamilyMemberFullname: 'Sirius Black',
+        secondFamilyMemberFullName: 'Sirius Black',
         commonAncestorFullName: 'Pollux Black',
         familyBranch: 'Black',
         kinship: 'first cousin'
@@ -166,7 +166,7 @@ const getFirstCousinsOnceRemovedMock = () =>
     [
       {
         firstFamilyMemberFullName: 'Draco Malfoy',
-        secondFamilyMemberFullname: 'Edward Remus Lupin',
+        secondFamilyMemberFullName: 'Edward Remus Lupin',
         commonAncestorFullName: 'Cygnus Black III',
         familyBranch: 'Black',
         kinship: 'first cousin once removed'
