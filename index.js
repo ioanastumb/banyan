@@ -758,13 +758,13 @@ const getKinship = (settings, familyData, firstFamilyMemberFullName, secondFamil
 
 const prettyPrintKinship = (value) => {
   if (value.kinship === 'self') {
-    return value.firstFamilyMemberFullName + ' is one and the same with ' + value.secondFamilyMemberFullname + '!';
+    return value.firstFamilyMemberFullName + ' is one and the same with ' + value.secondFamilyMemberFullName + '!';
   }
 
   let result = value.firstFamilyMemberFullName + ' is the <strong>' + value.kinship + '</strong> of ' + value.secondFamilyMemberFullname
     + ' in the ' + value.familyBranch + ' family branch;<br/>their common ancestor is ' + value.commonAncestorFullName;
 
-  result = (value.firstFamilyMemberFullName === value.commonAncestorFullName || value.secondFamilyMemberFullname === value.commonAncestorFullName)
+  result = (value.firstFamilyMemberFullName === value.commonAncestorFullName || value.secondFamilyMemberFullName === value.commonAncestorFullName)
     ? result = result + ' themselves.'
     : result = result + '.';
 
