@@ -1,5 +1,34 @@
 import * as Family from './src/family.js';
 
+
+const getSettings = () => (
+  {
+    cousinPrefixes: [
+      'first',
+      'second',
+      'third',
+      'fourth',
+      'fifth',
+      'sixth',
+      'seventh',
+      'eighth',
+      'ninth'
+    ],
+    cousinSuffixes: [
+      'once removed',
+      'twice removed',
+      'thrice removed',
+      '4 times removed',
+      '5 times removed',
+      '6 times removed',
+      '7 times removed',
+      '8 times removed',
+      '9 times removed'
+    ],
+    useExpandedGrandValues: true
+  }
+);
+
 const getHarryPotterUniverseFamilyData = () => (
   {
     familyTree: [
@@ -724,10 +753,53 @@ const getFamilyNames = (familyTree) => {
 }
 
 const getKinship = (settings, familyData, firstFamilyMemberFullName, secondFamilyMemberFullName) => {
-  let result = Family.getKinshipByNames(settings, familyData, firstFamilyMemberFullName, secondFamilyMemberFullName);
-  console.log(result);
+  return Family.getKinshipByNames(settings, familyData, firstFamilyMemberFullName, secondFamilyMemberFullName);
 }
 
-const printResults = () => {
+const prettyPrintKinship = (value) => {
+  if (value.kinship === 'self') {
+    return value.firstFamilyMemberFullName + ' is one and the same with ' + value.secondFamilyMemberFullname + '!';
+  }
 
+  let result = value.firstFamilyMemberFullName + ' is the <strong>' + value.kinship + '</strong> of ' + value.secondFamilyMemberFullname
+    + ' in the ' + value.familyBranch + ' family branch;<br/>their common ancestor is ' + value.commonAncestorFullName;
+
+  result = (value.firstFamilyMemberFullName === value.commonAncestorFullName || value.secondFamilyMemberFullname === value.commonAncestorFullName)
+    ? result = result + ' themselves.'
+    : result = result + '.';
+
+  return result;
 }
+
+const processKinships = (firstFamilyMemberFullName, secondFamilyMemberFullName, kinships) => {
+  let result = [];
+
+  let seen = new Set();
+  let hasDuplicates = kinships.some(function (k) {
+    return seen.size === seen.add(k.kinships).size;
+  });
+
+  if (kinships.length === 0) {
+    result.push('<strong>No family relation</strong> found between ' + firstFamilyMemberFullName + ' and '
+      + secondFamilyMemberFullName + '.<br/>Should they be related via a marriage somewhere in the tree? This is not supported yet!');
+  }
+  else {
+    if (hasDuplicates) {
+      result.push(prettyPrintKinship(kinships[0]));
+    }
+    else {
+      kinships.forEach(k => {
+        result.push(prettyPrintKinship(k));
+      });
+    }
+  }
+
+  return result;
+}
+
+window.getSettings = getSettings;
+window.getHarryPotterUniverseFamilyData = getHarryPotterUniverseFamilyData;
+window.processFamilyTree = processFamilyTree;
+window.getFamilyNames = getFamilyNames;
+window.getKinship = getKinship;
+window.processKinships = processKinships;

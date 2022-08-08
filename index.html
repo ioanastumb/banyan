@@ -44,9 +44,7 @@
       <section class="text-center">
         <h2 class="mb-5"><strong>Banyan</strong></h2>
         <p class="mb-1">Find the consanguine relationship between two family members in a complex family tree.</p>
-        <p class="mb-5">Demo done using the wonderful <span style="text-decoration: underline wavy;">Harry
-            Potter</span>
-          universe ⚡</p>
+        <p class="mb-5">Demo done using the wonderful Harry Potter ⚡ universe.</p>
 
         <div class="row">
           <div class="col-lg-6 mb-4">
@@ -88,9 +86,9 @@
             <div class="card">
               <div class="container" style="padding: 20px 0px 20px 0px">
                 <div class="col-sm-10 mx-auto">
-                  And the kinship between these two is...
+                  <strong>And the kinship between these two is...</strong>
                 </div>
-                <div id="result" class="col-sm-10 mx-auto" style="padding: 20px 0px 0px 0px">
+                <div id="result" class="col-sm-8 mx-auto" style="padding: 20px 0px 0px 0px">
                 </div>
               </div>
             </div>
@@ -122,6 +120,7 @@
 
   <script>
     $(document).ready(function () {
+      const settings = getSettings();
       const familyData = getHarryPotterUniverseFamilyData();
       const familyTree = processFamilyTree(familyData);
 
@@ -151,19 +150,20 @@
       });
 
       $('.advancedAutoComplete').on('autocomplete.select', function (evt, item) {
+        $('#result').empty();
+
         let firstValue = $('#first-family-member-select').val();
         let secondValue = $('#second-family-member-select').val();
 
         if (firstValue && secondValue) {
-          console.log('testy');
+          let result = getKinship(settings, familyData, firstValue, secondValue);
+          let processedResult = processKinships(firstValue, secondValue, result.kinships);
+          processedResult.forEach(pr => {
+            $('#result').append('<p>' + pr + '</p>');
+          });
         }
       });
     });
-    // load the data in
-    // fill the selects
-    // function on change on both selects, if both selects have values selected call the find kinship method
-    // function to pretty print the results - handle self, handle duplicates
-    // fill in the result div
   </script>
 </body>
 
