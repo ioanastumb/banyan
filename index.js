@@ -761,7 +761,7 @@ const prettyPrintKinship = (value) => {
     return value.firstFamilyMemberFullName + ' is one and the same with ' + value.secondFamilyMemberFullName + '!';
   }
 
-  let result = value.firstFamilyMemberFullName + ' is the <strong>' + value.kinship + '</strong> of ' + value.secondFamilyMemberFullname
+  let result = value.firstFamilyMemberFullName + ' is the <strong>' + value.kinship + '</strong> of ' + value.secondFamilyMemberFullName
     + ' in the ' + value.familyBranch + ' family branch;<br/>their common ancestor is ' + value.commonAncestorFullName;
 
   result = (value.firstFamilyMemberFullName === value.commonAncestorFullName || value.secondFamilyMemberFullName === value.commonAncestorFullName)
