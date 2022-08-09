@@ -17,6 +17,8 @@ The name was chosen to honour multi-generational families, whose branches spread
 
 This small library, inspired by [williamcasey's](https://github.com/williamcasey) [lineage](https://github.com/williamcasey/lineage), helps you find the **consanguine** relationship between two family members in a complex family tree. 
 
+A live version of this can be found at [https://ioanastumb.github.io/banyan/](https://ioanastumb.github.io/banyan/), using the wonderful Harry Potter universe family trees. 
+
 Consanguinity is defined as having a kinship with another person by being descended from a common ancestor; the algorithm makes great use of the information in this [Wikipedia article](https://en.wikipedia.org/wiki/Consanguinity) and directly references the following consanguinity table: 
 
 ![Table of Consanguinity](table-of-consanguinity.PNG)
@@ -28,7 +30,7 @@ In order to use this, you need to:
   * restrictions: the family node IDs must be unique; the highest ancestor from a family branch must have the parents set as `[-1]`
   * take care in setting up the proper parent-child relationships
   * take care in setting up the proper family branches - children should have both parents' family branches in order to be properly related to them
-  * samples from the wonderful Harry Potter universe can be found in this repository (linked above)
+  * samples from the Harry Potter universe can be found in this repository (linked above)
 * call the [Family.getKinshipByNames()](https://github.com/ioanastumb/banyan/blob/main/src/family.js#L140) method with the desired family member names
   * samples can be found in the [main.js](https://github.com/ioanastumb/banyan/blob/main/main.js) & [family.test.js](https://github.com/ioanastumb/banyan/blob/main/tests/family.test.js) files
 
@@ -37,7 +39,7 @@ A more in-depth guide will be provided soon!
 
 ## Caveats 
 
-As this library concerns itself only with the consanguine familial relationships, it will not be able to identify any relationships gained via marriages along the way. This feature might come in the future. 
+As this library concerns itself only with the consanguine familial relationships, it will not be able to identify any relationships gained via marriages along the way (e.g. sister in law). This feature might come in the future. 
 
 Also, since the algorithm takes into consideration the various family branches setup for each family member, you will encounter situations where it returns duplicate values - this is most obvious in a parent/child relationship at the bottom of the family tree. 
 
