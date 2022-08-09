@@ -709,23 +709,23 @@ const getHarryPotterUniverseFamilyData = () => (
     familyBranches: [
       {
         familyBranchName: 'Black',
-        isMainFamilyBranch: true
+        includeInSearch: true
       },
       {
         familyBranchName: 'Malfoy',
-        isMainFamilyBranch: true
+        includeInSearch: true
       },
       {
         familyBranchName: 'Potter',
-        isMainFamilyBranch: true
+        includeInSearch: true
       },
       {
         familyBranchName: 'Weasley',
-        isMainFamilyBranch: true
+        includeInSearch: true
       },
       {
         familyBranchName: 'Tonks',
-        isMainFamilyBranch: true
+        includeInSearch: true
       }
     ]
   }
@@ -745,7 +745,10 @@ const processFamilyTree = (familyData) => {
   return family;
 }
 
-const getFamilyNames = (familyTree) => {
+const getFamilyNames = (familyTree, ascendingOrder) => {
+  if (!ascendingOrder) {
+    familyTree = familyTree.reverse();
+  }
   return familyTree.map(ftn => ({
     value: ftn.fullName,
     text: ftn.fullName
@@ -762,7 +765,7 @@ const prettyPrintKinship = (value) => {
   }
 
   let result = value.firstFamilyMemberFullName + ' is the <strong>' + value.kinship + '</strong> of ' + value.secondFamilyMemberFullName
-    + ' in the ' + value.familyBranch + ' family branch;<br/>their common ancestor is ' + value.commonAncestorFullName;
+    + ' in the ' + value.familyBranch + ' family branch.<br/>Their common ancestor is ' + value.commonAncestorFullName;
 
   result = (value.firstFamilyMemberFullName === value.commonAncestorFullName || value.secondFamilyMemberFullName === value.commonAncestorFullName)
     ? result = result + ' themselves.'
@@ -774,24 +777,18 @@ const prettyPrintKinship = (value) => {
 const processKinships = (firstFamilyMemberFullName, secondFamilyMemberFullName, kinships) => {
   let result = [];
 
-  let seen = new Set();
-  let hasDuplicates = kinships.some(function (k) {
-    return seen.size === seen.add(k.kinships).size;
-  });
-
   if (kinships.length === 0) {
     result.push('<strong>No family relation</strong> found between ' + firstFamilyMemberFullName + ' and '
       + secondFamilyMemberFullName + '.<br/>Should they be related via a marriage somewhere in the tree? This is not supported yet!');
   }
   else {
-    if (hasDuplicates) {
-      result.push(prettyPrintKinship(kinships[0]));
-    }
-    else {
-      kinships.forEach(k => {
-        result.push(prettyPrintKinship(k));
-      });
-    }
+    let uniqueKinships = new Set();
+    kinships.forEach(k => { uniqueKinships.add(k.kinship) });
+
+    uniqueKinships.forEach(uk => {
+      let uniqueKinship = kinships.find(k => k.kinship === uk);
+      result.push(prettyPrintKinship(uniqueKinship));
+    });
   }
 
   return result;
