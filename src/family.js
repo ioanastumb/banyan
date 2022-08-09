@@ -15,12 +15,12 @@ const processFamilyTree = (familyData) => {
 }
 
 const processFamilyBranches = (familyData) => {
-  let branches = {};
+  let branches = new Array();
   familyData.familyBranches.forEach(fb => {
-    branches[fb.familyBranchName] = {
+    branches.push({
       familyBranchName: fb.familyBranchName,
-      isMainFamilyBranch: fb.isMainFamilyBranch
-    }
+      includeInSearch: fb.includeInSearch
+    });
   });
   return branches;
 }
@@ -103,7 +103,9 @@ const getKinshipFilteredByFamilyBranch = (settings, familyTree, firstFamilyMembe
 const getKinshipByIds = (settings, familyData, firstFamilyMemberId, secondFamilyMemberId) => {
   try {
     const familyTree = processFamilyTree(familyData);
-    const familyBranches = processFamilyBranches(familyData);
+    const includedFamilyBranches = processFamilyBranches(familyData)
+      .filter(fb => fb.includeInSearch === true)
+      .map(fb => fb.familyBranchName);
     let kinships = new Array();
 
     // get the lowest common ancestor(s) between the two family members
@@ -112,13 +114,15 @@ const getKinshipByIds = (settings, familyData, firstFamilyMemberId, secondFamily
     // go through the ancestor list and determine the relationship based on the acestor's family branch(es)
     ancestors.forEach(ancestorId => {
       familyTree[ancestorId].familyBranches.forEach(familyBranch => {
-        kinships.push({
-          firstFamilyMemberFullName: familyTree[firstFamilyMemberId].fullName,
-          secondFamilyMemberFullName: familyTree[secondFamilyMemberId].fullName,
-          commonAncestorFullName: familyTree[ancestorId].fullName,
-          familyBranch: familyBranch,
-          kinship: getKinshipFilteredByFamilyBranch(settings, familyTree, firstFamilyMemberId, secondFamilyMemberId, ancestorId, familyBranch)
-        });
+        if (includedFamilyBranches.includes(familyBranch)) {
+          kinships.push({
+            firstFamilyMemberFullName: familyTree[firstFamilyMemberId].fullName,
+            secondFamilyMemberFullName: familyTree[secondFamilyMemberId].fullName,
+            commonAncestorFullName: familyTree[ancestorId].fullName,
+            familyBranch: familyBranch,
+            kinship: getKinshipFilteredByFamilyBranch(settings, familyTree, firstFamilyMemberId, secondFamilyMemberId, ancestorId, familyBranch)
+          });
+        }
       });
     });
 

@@ -678,23 +678,23 @@ const getHarryPotterUniverseFamilyData = () => (
     familyBranches: [
       {
         familyBranchName: 'Black',
-        isMainFamilyBranch: true
+        includeInSearch: true
       },
       {
         familyBranchName: 'Malfoy',
-        isMainFamilyBranch: true
+        includeInSearch: true
       },
       {
         familyBranchName: 'Potter',
-        isMainFamilyBranch: true
+        includeInSearch: true
       },
       {
         familyBranchName: 'Weasley',
-        isMainFamilyBranch: true
+        includeInSearch: true
       },
       {
         familyBranchName: 'Tonks',
-        isMainFamilyBranch: true
+        includeInSearch: true
       }
     ]
   }

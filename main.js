@@ -3,18 +3,22 @@ import * as FamilyDataProvider from './data/family-provider.js';
 import * as Family from './src/family.js';
 
 const prettyPrint = (kinships) => {
+  let uniqueKinships = new Set();
+  kinships.forEach(k => { uniqueKinships.add(k.kinship) });
+
   let print = '';
-  kinships.forEach(k => {
+  uniqueKinships.forEach(uk => {
+    let uniqueKinship = kinships.find(k => k.kinship === uk);
     print = print
-      + k.firstFamilyMemberFullName
+      + uniqueKinship.firstFamilyMemberFullName
       + ' is the '
-      + k.kinship
+      + uniqueKinship.kinship
       + ' of '
-      + k.secondFamilyMemberFullName
+      + uniqueKinship.secondFamilyMemberFullName
       + ' in the '
-      + k.familyBranch
+      + uniqueKinship.familyBranch
       + ' family branch; their common ancestor is '
-      + k.commonAncestorFullName + '.\n';
+      + uniqueKinship.commonAncestorFullName + '.\n';
   });
   return print;
 }
