@@ -17,7 +17,7 @@ The name was chosen to honour multi-generational families, whose branches spread
 
 This small library, inspired by [williamcasey's](https://github.com/williamcasey) [lineage](https://github.com/williamcasey/lineage), helps you find the **consanguine** relationship between two family members in a complex family tree. 
 
-A live version of this can be found at [https://ioanastumb.github.io/banyan/](https://ioanastumb.github.io/banyan/), using the wonderful Harry Potter universe family trees. 
+A live version of this can be found at [ioanastumb.github.io/banyan/](https://ioanastumb.github.io/banyan/), using the wonderful Harry Potter universe family trees. 
 
 Consanguinity is defined as having a kinship with another person by being descended from a common ancestor; the algorithm makes great use of the information in this [Wikipedia article](https://en.wikipedia.org/wiki/Consanguinity) and directly references the following consanguinity table: 
 
