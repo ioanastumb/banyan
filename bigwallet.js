@@ -698,12 +698,86 @@ const getBigwalletFamilyData = () => (
           48
         ],
         gender: 'unknown',
-        fullName: 'Nina and Greg\'s baby!',
+        fullName: 'Sandalwood Bigwallet',
         familyBranches: [
           'Bourdreaux-Bigwallet',
           'Lunvik',
           'Monet',
           'Vatore',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 50,
+        parents: [
+          28,
+          29
+        ],
+        gender: 'male',
+        fullName: 'Rhys Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 51,
+        parents: [-1],
+        gender: 'male',
+        fullName: 'Kevin Swanson',
+        familyBranches: [
+          'Swanson'
+        ]
+      },
+      {
+        id: 52,
+        parents: [
+          31,
+          51
+        ],
+        gender: 'unspecified',
+        fullName: 'Addison Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 53,
+        parents: [
+          31,
+          51
+        ],
+        gender: 'unspecified',
+        fullName: 'Breanne Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
           'Renrut-Bigwallet',
           'Feldman',
           'Robles',
@@ -781,6 +855,10 @@ const getBigwalletFamilyData = () => (
       },
       {
         familyBranchName: 'Lunvik',
+        includeInSearch: true
+      },
+      {
+        familyBranchName: 'Swanson',
         includeInSearch: true
       }
     ]
