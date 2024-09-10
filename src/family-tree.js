@@ -104,9 +104,14 @@ const getLeastCommonAncestorIds = (familyTree, firstFamilyMemberId, secondFamily
 }
 
 const getParentByFamilyBranch = (familyTree, familyMemberId, familyBranch) => {
-  return familyTree.find(ftn => familyTree[familyMemberId].parents
-    && familyTree[familyMemberId].parents.includes(ftn.id)
-    && ftn.familyBranches.includes(familyBranch));
+  try {
+    return familyTree.find(ftn => familyTree[familyMemberId].parents
+      && familyTree[familyMemberId].parents.includes(ftn.id)
+      && ftn.familyBranches.includes(familyBranch));
+  }
+  catch (error) {
+    console.log(error);
+  }
 }
 
 const getParentIdByFamilyBranch = (familyTree, familyMemberId, familyBranch) => {

@@ -171,6 +171,10 @@
         if (firstValue && secondValue) {
           let result = getKinship(settings, familyData, firstValue, secondValue);
           let processedResult = processKinships(firstValue, secondValue, result.kinships);
+          // var singleResult = processedResult.count() == 1
+          //   ? processedResult[0]
+          //   : processedResult.filter(pr => pr.includes("Semaj"))[0];
+          // $('#result').append('<p>' + singleResult + '</p>');
           processedResult.forEach(pr => {
             $('#result').append('<p>' + pr + '</p>');
           });

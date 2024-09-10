@@ -1268,7 +1268,7 @@ const getBigwalletFamilyData = () => (
         id: 78,
         parents: [-1],
         gender: 'male',
-        fullName: 'Wolf',
+        fullName: 'Wolf Bain',
         familyBranches: [
           'Bain'
         ]
