@@ -697,7 +697,7 @@ const getBigwalletFamilyData = () => (
           47,
           48
         ],
-        gender: 'unknown',
+        gender: 'male',
         fullName: 'Sandalwood Bigwallet',
         familyBranches: [
           'Bourdreaux-Bigwallet',
@@ -749,7 +749,7 @@ const getBigwalletFamilyData = () => (
           31,
           51
         ],
-        gender: 'unspecified',
+        gender: 'male',
         fullName: 'Addison Bigwallet',
         familyBranches: [
           'Bourdreaux-Bigwallet',
@@ -771,10 +771,544 @@ const getBigwalletFamilyData = () => (
           31,
           51
         ],
-        gender: 'unspecified',
+        gender: 'female',
         fullName: 'Breanne Bigwallet',
         familyBranches: [
           'Bourdreaux-Bigwallet',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 54,
+        parents: [
+          44,
+          45
+        ],
+        gender: 'female',
+        fullName: 'Kristina Monet-Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Monet',
+          'Vatore',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 55,
+        parents: [
+          44,
+          45
+        ],
+        gender: 'female',
+        fullName: 'Alycia Monet-Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Monet',
+          'Vatore',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 56,
+        parents: [
+          44,
+          45
+        ],
+        gender: 'male',
+        fullName: 'Caden Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Monet',
+          'Vatore',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 58,
+        parents: [
+          53
+        ],
+        gender: 'male',
+        fullName: 'Shannon Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 59,
+        parents: [-1],
+        gender: 'female',
+        fullName: 'Hilary Markovic',
+        familyBranches: [
+          'Markovic'
+        ]
+      },
+      {
+        id: 60,
+        parents: [
+          52,
+          59
+        ],
+        gender: 'female',
+        fullName: 'Quinn Markovic Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 61,
+        parents: [-1],
+        gender: 'male',
+        fullName: 'Koji Hasegawa',
+        familyBranches: [
+          'Hasegawa'
+        ]
+      },
+      {
+        id: 62,
+        parents: [
+          60,
+          61
+        ],
+        gender: 'female',
+        fullName: 'Willow Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 63,
+        parents: [-1],
+        gender: 'female',
+        fullName: 'Orion Michaelson',
+        familyBranches: [
+          'Michaelson'
+        ]
+      },
+      {
+        id: 64,
+        parents: [
+          62,
+          63
+        ],
+        gender: 'unknown',
+        fullName: 'Stevie Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Michaelson',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 65,
+        parents: [
+          60,
+          61
+        ],
+        gender: 'male',
+        fullName: 'Ash Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 66,
+        parents: [-1],
+        gender: 'female',
+        fullName: 'Krysta Robles',
+        familyBranches: [
+          'Robles (San Sequoia)'
+        ]
+      },
+      {
+        id: 67,
+        parents: [
+          65,
+          66
+        ],
+        gender: 'male',
+        fullName: 'Wayne Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Robles (San Sequoia)',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 68,
+        parents: [
+          65,
+          66
+        ],
+        gender: 'male',
+        fullName: 'Karson Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Robles (San Sequoia)',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 69,
+        parents: [
+          60,
+          61
+        ],
+        gender: 'male',
+        fullName: 'Aspen Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 70,
+        parents: [
+          69
+        ],
+        gender: 'male',
+        fullName: 'Thomas Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 71,
+        parents: [
+          60,
+          61
+        ],
+        gender: 'male',
+        fullName: 'Alder Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 72,
+        parents: [
+          71
+        ],
+        gender: 'male',
+        fullName: 'Brent Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 73,
+        parents: [
+          60,
+          61
+        ],
+        gender: 'male',
+        fullName: 'Oak Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 74,
+        parents: [
+          60,
+          61
+        ],
+        gender: 'female',
+        fullName: 'Cherry Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 75,
+        parents: [
+          60,
+          61
+        ],
+        gender: 'female',
+        fullName: 'Maple Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Hasegawa',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 76,
+        parents: [
+          52,
+          59
+        ],
+        gender: 'male',
+        fullName: 'Rye Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 77,
+        parents: [
+          76
+        ],
+        gender: 'female',
+        fullName: 'Lady Bigwallet III',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 78,
+        parents: [-1],
+        gender: 'male',
+        fullName: 'Wolf',
+        familyBranches: [
+          'Bain'
+        ]
+      },
+      {
+        id: 79,
+        parents: [
+          77,
+          78
+        ],
+        gender: 'female',
+        fullName: 'Laird Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Bain',
+          'Markovic',
+          'Swanson',
+          'Silversweater',
+          'Paoa',
+          'Renrut-Bigwallet',
+          'Feldman',
+          'Robles',
+          'Pizzazz',
+          'Disiac-Roe',
+          'Bourdreaux',
+          'Wallet-Skaggs'
+        ]
+      },
+      {
+        id: 80,
+        parents: [
+          77,
+          78
+        ],
+        gender: 'female',
+        fullName: 'Wren Bigwallet',
+        familyBranches: [
+          'Bourdreaux-Bigwallet',
+          'Bain',
+          'Markovic',
           'Swanson',
           'Silversweater',
           'Paoa',
@@ -859,6 +1393,26 @@ const getBigwalletFamilyData = () => (
       },
       {
         familyBranchName: 'Swanson',
+        includeInSearch: true
+      },
+      {
+        familyBranchName: 'Markovic',
+        includeInSearch: true
+      },
+      {
+        familyBranchName: 'Hasegawa',
+        includeInSearch: true
+      },
+      {
+        familyBranchName: 'Michaelson',
+        includeInSearch: true
+      },
+      {
+        familyBranchName: 'Robles (San Sequoia)',
+        includeInSearch: true
+      },
+      {
+        familyBranchName: 'Bain',
         includeInSearch: true
       }
     ]
