@@ -851,6 +851,13 @@ const getBigwalletFamilyData = () => (
         ]
       },
       {
+        id: 57,
+        parents: [-1],
+        gender: 'unknown',
+        fullName: 'N/A',
+        familyBranches: []
+      },
+      {
         id: 58,
         parents: [
           53
