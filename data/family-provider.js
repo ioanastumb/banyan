@@ -304,7 +304,9 @@ const getHarryPotterUniverseFamilyData = () => (
         parents: [-1],
         gender: 'female',
         fullName: 'Molly Weasley (nee Prewett)',
-        familyBranches: []
+        familyBranches: [
+          'Prewett'
+        ]
       },
 
       // gen 5
@@ -390,7 +392,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'Harry Potter',
         familyBranches: [
-          'Potter'
+          'Potter', 'Evans'
         ]
       },
       {
@@ -402,7 +404,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'female',
         fullName: 'Ginevra Molly Potter (nee Weasley)',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -414,7 +416,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'William Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -433,7 +435,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'Charles Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -445,7 +447,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'Percy Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -464,7 +466,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'Fred Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -476,7 +478,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'George Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -495,7 +497,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'Ronald Billius Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -503,7 +505,9 @@ const getHarryPotterUniverseFamilyData = () => (
         parents: [-1],
         gender: 'female',
         fullName: 'Hermione Granger',
-        familyBranches: []
+        familyBranches: [
+          'Granger'
+        ]
       },
 
       // gen 7
@@ -540,7 +544,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'James Sirius Potter',
         familyBranches: [
-          'Potter', 'Weasley'
+          'Potter', 'Weasley', 'Evans'
         ]
       },
       {
@@ -552,7 +556,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'Albus Severus Potter',
         familyBranches: [
-          'Potter', 'Weasley'
+          'Potter', 'Weasley', 'Evans'
         ]
       },
       {
@@ -564,7 +568,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'female',
         fullName: 'Lily Luna Potter',
         familyBranches: [
-          'Potter', 'Weasley'
+          'Potter', 'Weasley', 'Evans'
         ]
       },
       {
@@ -576,7 +580,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'female',
         fullName: 'Victoire Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -588,7 +592,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'female',
         fullName: 'Dominique Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -600,7 +604,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'Louis Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -612,7 +616,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'female',
         fullName: 'Molly Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -624,7 +628,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'female',
         fullName: 'Lucy Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -636,7 +640,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'Fred Weasley II',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -648,7 +652,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'female',
         fullName: 'Roxanne Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett'
         ]
       },
       {
@@ -660,7 +664,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'female',
         fullName: 'Rose Granger-Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett', 'Granger'
         ]
       },
       {
@@ -672,7 +676,7 @@ const getHarryPotterUniverseFamilyData = () => (
         gender: 'male',
         fullName: 'Hugo Granger-Weasley',
         familyBranches: [
-          'Weasley', 'Black'
+          'Weasley', 'Black', 'Prewett', 'Granger'
         ]
       }],
     familyBranches: [
@@ -694,6 +698,18 @@ const getHarryPotterUniverseFamilyData = () => (
       },
       {
         familyBranchName: 'Tonks',
+        includeInSearch: true
+      },
+      {
+        familyBranchName: 'Evans',
+        includeInSearch: true
+      },
+      {
+        familyBranchName: 'Prewett',
+        includeInSearch: true
+      },
+      {
+        familyBranchName: 'Granger',
         includeInSearch: true
       }
     ]
